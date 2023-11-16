@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "774329212487",
+    "project_id": "centerragold-9f11a",
+    "storage_bucket": "centerragold-9f11a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774329212487:android:a6877ed25d3af25514db62",
+        "android_client_info": {
+          "package_name": "com.centerragold"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzxEUnasT0-HDlE1wLQWSBBecI4DmKy9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
