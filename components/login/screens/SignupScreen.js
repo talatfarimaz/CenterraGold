@@ -12,7 +12,7 @@ const SignupScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Create an account</Text>
+      <Text style={styles.text}>Yeni bir hesap oluştur</Text>
 
       <FormInput
         labelValue={email}
@@ -27,7 +27,7 @@ const SignupScreen = ({navigation}) => {
       <FormInput
         labelValue={password}
         onChangeText={userPassword => setPassword(userPassword)}
-        placeholderText="Password"
+        placeholderText="Şifre"
         iconType="lock"
         secureTextEntry={true}
       />
@@ -35,34 +35,20 @@ const SignupScreen = ({navigation}) => {
       <FormInput
         labelValue={confirmPassword}
         onChangeText={userPassword => setPassword(userPassword)}
-        placeholderText="Confirm Password"
+        placeholderText="Şifreyi Tekrarla"
         iconType="lock"
         secureTextEntry={true}
       />
 
       <FormButton
-        buttonTitle="Sign Up"
+        buttonTitle="Kaydol"
         onPress={() => register(email, password)}
       />
-      <View style={styles.textPrivate}>
-        <Text style={styles.color_textPrivate}>
-          By registering, you confirm that you accept our{' '}
-        </Text>
-        <TouchableOpacity onPress={() => alert('Terms Clicked!')}>
-          <Text style={[styles.color_textPrivate, {color: '#e88832'}]}>
-            Terms of service
-          </Text>
-        </TouchableOpacity>
-        <Text style={styles.color_textPrivate}> and </Text>
-        <Text style={[styles.color_textPrivate, {color: '#e88832'}]}>
-          Privacy Policy
-        </Text>
-      </View>
 
       <TouchableOpacity
         style={styles.navButton}
         onPress={() => navigation.navigate('Login')}>
-        <Text style={styles.navButtonText}>Have an account? Sign In</Text>
+        <Text style={styles.navButtonText}>Hesabın var mı? Giriş yap</Text>
       </TouchableOpacity>
     </View>
   );
@@ -82,7 +68,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Kufam-SemiBoldItalic',
     fontSize: 28,
     marginBottom: 10,
-    color: '#051d5f',
+    color: '#6b4fa8',
   },
   navButton: {
     marginTop: 15,
@@ -90,7 +76,7 @@ const styles = StyleSheet.create({
   navButtonText: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#2e64e5',
+    color: '#6b4fa8',
     fontFamily: 'Lato-Regular',
   },
   textPrivate: {

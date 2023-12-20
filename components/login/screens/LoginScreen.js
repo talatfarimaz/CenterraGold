@@ -25,26 +25,26 @@ const LoginScreen = ({navigation}) => {
       <FormInput
         labelValue={password}
         onChangeText={userPassword => setPassword(userPassword)}
-        placeholderText="Password"
+        placeholderText="Şifre"
         iconType="lock"
         secureTextEntry={true}
       />
 
-      <FormButton
-        buttonTitle="Sign In"
-        onPress={() => login(email, password)}
-      />
+      <FormButton buttonTitle="Giriş" onPress={() => login(email, password)} />
       <TouchableOpacity style={styles.forgotButton} onPress={() => {}}>
-        <Text style={styles.navButtonText}>Forgot Password?</Text>
+        <Text style={styles.navButtonText}>Şifremi Unuttum</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.forgotButton}
         onPress={() => navigation.navigate('Signup')}>
-        <Text style={styles.navButtonText}>
-          Don't have an acount? Create here
-        </Text>
+        <Text style={styles.navButtonText}>Yeni Hesap Oluştur</Text>
       </TouchableOpacity>
+      <View style={{flex: 1, justifyContent: 'flex-end'}}>
+        <Text style={{fontWeight: 'bold', fontSize: 11, fontStyle: 'italic'}}>
+          Created by Farımaz
+        </Text>
+      </View>
     </View>
   );
 };
@@ -72,12 +72,12 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   forgotButton: {
-    marginVertical: 35,
+    marginVertical: 25,
   },
   navButtonText: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#2e64e5',
+    color: '#6b4fa8',
     fontFamily: 'Lato-Regular',
   },
 });

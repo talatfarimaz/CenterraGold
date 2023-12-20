@@ -5,6 +5,7 @@ import SignupScreen from '../login/screens/SignupScreen';
 import LoginScreen from '../login/screens/LoginScreen';
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {IconButton} from 'react-native-paper';
 
 const Stack = createStackNavigator();
 
@@ -27,15 +28,14 @@ const AuthStack = () => {
             elevation: 0,
           },
           headerLeft: () => (
-            <View style={{marginLeft: 10}}>
-              <FontAwesome.Button
-                name="long-arrow-left"
-                size={25}
-                backgroundColor="#f9fafd"
-                color="#333"
-                onPress={() => navigation.navigate('Login')}
-              />
-            </View>
+            <IconButton
+              icon="arrow-left"
+              iconColor={'#6b4fa8'}
+              containerColor={'#ffffff'}
+              mode={'outlined'}
+              size={25}
+              onPress={() => navigation.navigate('Login')}
+            />
           ),
         })}
       />
